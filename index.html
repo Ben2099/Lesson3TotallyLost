@@ -1,0 +1,36 @@
+<div>Combo Challenge</div>
+<div><input type="text" id="user-guess" /></div>
+<div>
+  <button onclick="handleClick()">
+    submit
+  </button>
+</div>
+<div id="results"></div>
+<script>
+  function handleClick() {
+    // variable notes
+    // let hello = "hi"; //string
+    // let isLightOn = false; // boolean
+    // let fortyTwo = 42; // number
+    // let fortyTwoString = "42";
+
+    // console.log(hello);
+    // console.log(isLightOn);
+    // console.log(fortyTwo, fortyTwoString);
+    // console.log(fortyTwo === fortyTwoString);
+
+    let combo = "654321";
+    console.log(combo);
+
+    let resultsElem = document.getElementById("results");
+    resultsElem.innerHTML = combo;
+
+    let userGuess = document.getElementById("user-guess").value;
+
+    console.log("data", userGuess, combo, combo === userGuess);
+    if (combo === userGuess) {
+      console.log("YAY! you win!");
+    }
+  }
+</script>
+test this out
